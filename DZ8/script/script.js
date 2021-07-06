@@ -4,10 +4,12 @@ const objCopy = copy(obj);
 
 function copy(obj) {
   let objCopy = {};
-  let key;
-
-  for (key in obj) {
-    objCopy[key] = obj[key];
+  for (const i in obj) {
+    if (obj[i] instanceof Object) {
+      objCopy[i] = copy(obj[i]);
+      continue;
+    }
+    objCopy[i] = obj[i];
   }
   return objCopy;
 }
