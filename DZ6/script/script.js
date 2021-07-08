@@ -26,43 +26,39 @@ const items = [
   },
 ];
 
-let counter = 0;
-let total = 0;
+let prod = 0;
 
-totalAmout(total);
+totalAmout(prod);
 
 function totalAmout(producs) {
   for (let i = 0; i < items.length; i++) {
-    total = total + items[i].price;
+    producs = producs + items[i].price;
   }
 
-  alert(`Общая стоимость вашего заказа: ${total}`);
+  console.log(`Общая стоимость вашего заказа: ${producs}` + `$`);
 }
 
-avaragePriceOfOneProduct(total);
+avaragePriceOfOneProduct(prod);
 
 function avaragePriceOfOneProduct(producs) {
   for (let i = 0; i < items.length; i++) {
-    total = total + items[i].price;
+    producs = producs + items[i].price;
   }
-  alert(total / items.length);
+  console.log(producs / items.length + `$`);
 }
 
-printSorted(total);
+printSorted(prod);
 
-function printSorted(products) {
-  total = items.sort(price);
-
-  alert(total);
+function printSorted(producs) {
+  producs = items.sort(price);
+  console.log(total);
 }
 
-printSorted();
-
-function printSorted(products) {
+function printSorted() {
   function byField(field) {
     return (a, b) => (a[field] > b[field] ? 1 : -1);
   }
 
   items.sort(byField(`price`));
-  items.forEach((user) => alert(user.price));
+  items.forEach((user) => console.log(user.price));
 }
