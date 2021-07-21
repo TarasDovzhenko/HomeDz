@@ -9,9 +9,15 @@ window.onload = (function () {
     let year = document.querySelector(`.main-title-year`);
     let inputEnter = document.querySelector(`.form-control`);
 
-    inputEnter.value = inputEnter.value.replace(/[^\d.]/g, "");
-    year.textContent = inputEnter.value;
-    inputEnter.value = ``;
+    let inputEnterVal = inputEnter.value;
+
+    if (isNaN(inputEnterVal) || inputEnterVal === "") {
+      alert("Is NaN");
+      inputEnter.value = ``;
+    } else {
+      year.textContent = inputEnter.value;
+      inputEnter.value = ``;
+    }
   }
 })();
 
