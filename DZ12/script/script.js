@@ -23,7 +23,7 @@ window.onload = (function () {
   function removeAttrib() {
     let myAttrib = document.querySelector("[my-attribute='test']");
     myAttrib.removeAttribute(`my-attribute`);
-    myAttrib.remove();
+    myAttrib.innerHTML = ``;
   }
 })();
 
@@ -50,18 +50,19 @@ window.onload = (function () {
 
   btnAddRow.addEventListener("click", addRowTable);
   function addRowTable() {
-    let table = document.querySelector(`tbody`);
+    let penultimate = document.querySelector(`.penultimate-row`);
 
     let sring = document.createElement("tr");
 
     let columnOne = document.createElement("td");
-    columnOne.innerHTML = `Lorem tre sty`;
+    columnOne.textContent = `Lorem tre sty`;
 
     let columnTwo = document.createElement("td");
-    columnTwo.innerHTML = `Lorem opru`;
+    columnTwo.textContent = `Lorem opru`;
 
     let columnThree = document.createElement("td");
-    columnThree.innerHTML = `Lorem smail`;
+    columnThree.textContent = `Lorem smail`;
+    columnThree.setAttribute(`data-id`, `revenue-value`);
 
     sring.appendChild(columnOne);
 
@@ -69,7 +70,7 @@ window.onload = (function () {
 
     sring.appendChild(columnThree);
 
-    table.appendChild(sring);
+    penultimate.after(sring);
   }
 })();
 // -------------------- 5 -------------------
