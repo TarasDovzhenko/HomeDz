@@ -1,0 +1,41 @@
+.increase-btn {
+  margin-left: 30px;
+  background-color: rgb(64, 121, 8);
+  color: azure;
+  box-shadow: 5px 3px 3px black;
+}
+
+.increase-btn:hover {
+  background-color: cornflowerblue;
+  box-shadow: 10px 5px 5px black;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  background-color: rgb(238, 228, 215);
+}
+
+li {
+  color: rgb(6, 51, 51);
+  list-style: none;
+  background-color: rgb(210, 245, 209);
+  width: 140px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+#butt {
+  background-color: coral;
+}
+
+#butt:hover {
+  background-color: cornflowerblue;
+  box-shadow: 10px 5px 5px black;
+}
+
+li span {
+  margin-left: 5px;
+}
