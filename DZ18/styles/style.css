@@ -1,0 +1,16 @@
+.welcome {
+  color: tomato;
+  font-size: 150px;
+  text-align: center;
+  display: none;
+}
+
+.container {
+  background-color: thistle;
+}
+
+.error {
+  color: tomato;
+  font-size: 150px;
+  text-align: center;
+}
