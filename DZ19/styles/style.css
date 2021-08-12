@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #777777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.datepage {
+  width: 30%;
+  background: white;
+  text-align: center;
+  font-size: 32px;
+  padding: 10px;
+  box-shadow: 0 0 15px black;
+  border-radius: 50%;
+  color: #244704;
+  font-family: "Segoe Print", "Caveat";
+}
+#date {
+  display: block;
+
+  font-size: 18px;
+}
+
+.datepage:hover {
+  width: 50%;
+
+  color: #fbff00;
+  transition: 2s;
+  background-color: #005a70;
+}
+
+.datepage:not(:hover) {
+  transition: 3s;
+}
