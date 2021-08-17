@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #777777;
+
+  height: 100vh;
+}
+
+#myText {
+  margin: 10px;
+  box-shadow: 10px 5px 5px black;
+}
+
+#butt {
+  background-color: rgb(194, 194, 194);
+  box-shadow: 10px 5px 5px black;
+}
+
+#butt:hover {
+  background-color: rgb(94, 117, 117);
+  color: aliceblue;
+}
+
+.table {
+  /* display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; */
+  color: azure;
+}
+
+td {
+  padding: 10px;
+}
+
+.delete-btn {
+  padding: 7px;
+}
