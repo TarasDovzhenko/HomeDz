@@ -1,0 +1,29 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+.container {
+  margin-left: 800px;
+  background-color: rgb(218, 218, 218);
+}
+
+.get-post {
+  padding: 5px;
+  color: rgb(0, 0, 0);
+  background-color: burlywood;
+  box-shadow: 10px 5px 5px black;
+}
+
+.title {
+  color: rgb(203, 106, 223);
+}
+
+.get-post:hover {
+  background-color: rgb(203, 106, 223);
+  color: aliceblue;
+}
+
+.completed {
+  border-bottom: thick double #32a1ce;
+}
