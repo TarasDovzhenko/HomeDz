@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "moment": "^2.29.1"
+  },
+  "name": "metest",
+  "version": "1.0.0",
+  "description": "me momentjs",
+  "main": "moment.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Taras",
+  "license": "ISC"
+}
