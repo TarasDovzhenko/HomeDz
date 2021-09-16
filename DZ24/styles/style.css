@@ -1,0 +1,68 @@
+:root {
+  --tile-size: 70px;
+}
+.main {
+  width: 100vh;
+  height: 100vh;
+  margin: 0 auto;
+}
+.game-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.tiles-container {
+  margin: 0 auto;
+  width: calc(var(--tile-size) * 4 + 24px);
+  /* background-color: darkcyan; */
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.582), 0 10px 10px rgba(0, 0, 0, 0.726);
+  font-size: 23px;
+  font-weight: 700;
+  color: blueviolet;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+.control-panel {
+  width: 100px;
+}
+.tile {
+  height: var(--tile-size);
+  width: var(--tile-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  /* box-shadow: inset 0px 0px 10px rgba(200,140,200,0.5); */
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.tile:hover {
+  background-color: rgba(255, 127, 80, 0.699);
+  font-size: 28px;
+}
+
+#counter {
+  color: blueviolet;
+  font-size: 28px;
+}
+
+.btn {
+  color: aliceblue;
+  padding: 15px 20px;
+  border-radius: 5px;
+  background-color: rgb(197, 173, 219);
+}
+
+.btn:hover {
+  background-color: blueviolet;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.363);
+}
+
+.block-counter {
+  padding: 15px 60px;
+  background-color: rgb(197, 173, 219);
+  border-radius: 5px;
+}
