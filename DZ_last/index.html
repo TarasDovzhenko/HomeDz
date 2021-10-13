@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HW22</title>
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="login-cintainer" id="login-container">
+      <form id="form">
+        <input
+          id="input"
+          class="input"
+          type="text"
+          name="login"
+          placeholder="Enter your login"
+        />
+        <button id="button">Login</button>
+      </form>
+    </div>
+    <div class="container container-none">
+      <div id="chat-window">
+        <div id="massages"></div>
+        <script type="text/template" id="postItemsInTemplate">
+          <h3>{{name}}</h3>
+          <p>{{massage}}</p>
+        </script>
+      </div>
+      <div class="nav-chat">
+        <input
+          id="input-massage"
+          class="input"
+          type="text"
+          placeholder="Enter your massage"
+        />
+        <button id="button-enter">Enter</button>
+        <button id="logout-button">Logout</button>
+        <input type="checkbox" id="scales" name="scales" checked />
+        <label for="scales">RECONECT</label>
+      </div>
+    </div>
+  </body>
+</html>
